@@ -8,7 +8,7 @@ var level = 0;
 
 // Start game by pressing any key
 
-$(document).keypress(function() { //finds a keypress event anywhere in the document
+$(".start").click(function() { //finds a keypress event anywhere in the document
   if (started === false) { //if started is false then run function
     $("h1").text("Level " + level);
     nextSequence();
